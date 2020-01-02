@@ -1,11 +1,35 @@
-package oops;
+package zoo.oops;
 
 public class Guide {
 public static void main(String[] args) {
-		creatingInstances();
-		addinganotherInstance();
-		usingArrays();
+		//creatingInstances();
+		//addinganotherInstance();
+		//usingArrays();
+	//usingAbstractClass();
+	
 	}
+
+private static void usingAbstractClass() {
+	wildAnimals W1 = new Tiger();
+	W1.caption();
+	System.out.println("************");
+	System.out.println("Tiger");
+	W1.eat();
+	W1.hunt();
+	W1.liveplace();
+	System.out.println("************");
+	wildAnimals W2 = new Deer();
+	System.out.println("Deer");
+	W2.eat();
+	W2.hunt();
+	W2.liveplace();
+	System.out.println("************");
+	wildAnimals W3 = new Bear();
+	System.out.println("Bear");
+	W3.eat();
+	W3.hunt();
+	W3.liveplace();
+}
 
 private static void usingArrays() {
 	// Arrays are static collections.
