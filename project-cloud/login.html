@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <style>
+
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        /* background colour for the menu bar */
+        .menu {
+          overflow: hidden;
+          background-color: #e9e9e9;
+        }
+        /* for links inside the menu bar */
+        .menu a {
+          float: left;
+          display: block;
+          color: black;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        /* Change the color of links on hover */
+        .menu a:hover {
+             background-color: #ddd;
+              color: black;
+        }
+        /* for active links */
+        .menu a.active {
+             background-color: #2196F3;
+             color: white;
+             }
+        /* for container */
+        .search-container {
+          float: center;
+        }
+        .search-container button {
+          float: center;
+          padding: 6px 10px;
+          background: #ddd;
+          font-size: 17px;
+          border: none;
+          cursor: pointer;
+        }
+        </style>
+<head>
+    <title>Homepage</title>
+</head>
+<body>
+<center>
+  <div class="menu">
+    <a class="active" href="#">Home</a>
+      <a href="http://127.0.0.1:5500/add%20movie.html">Add movie</a>
+      <a href="http://127.0.0.1:5500/contact.html">Contact</a>
+    </div>
+    <h2>Welcome to CMDB Homepage</h2>
+    <div class="search-container">
+        <form action="/action_page.php" method="GET">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit" class="searchButton">Submit</button>
+        </form>
+      </div>
+    </center>
+</body>
+</html>
