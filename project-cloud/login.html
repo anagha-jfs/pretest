@@ -53,13 +53,27 @@
     <a class="active" href="#">Home</a>
       <a href="http://127.0.0.1:5500/add%20movie.html">Add movie</a>
       <a href="http://127.0.0.1:5500/contact.html">Contact</a>
+      <a style="float: right;" href="https://cmdblogin.auth.ap-south-1.amazoncognito.com/login?client_id=7crn88p2fmrbhncmrobtltvn62&response_type=code&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=https://cmdb-9.s3.ap-south-1.amazonaws.com/login.html">Logout</a>
     </div>
     <h2>Welcome to CMDB Homepage</h2>
     <div class="search-container">
-        <form action="/action_page.php" method="GET">
-          <input type="text" placeholder="Search.." name="search">
-          <button type="submit" class="searchButton">Submit</button>
-        </form>
+      <table class="table" id="myTable">
+        <thead>
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Rating</th>            
+            <th scope="col">Cast</th>
+            <th scope="col">Year</th>
+          </tr>
+        </thead>
+        <tbody id="MovieContainer">
+        </tbody>
+      </table>
+      <p>Click the button to sort the table alphabetically:</p>
+      <p><button onclick="sortTable()">Sort</button></p>
+    </div>
+    <script src="js/view_movies.js"></script>
       </div>
     </center>
 </body>
